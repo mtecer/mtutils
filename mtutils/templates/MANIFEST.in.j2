@@ -1,0 +1,21 @@
+include LICENSE
+include README.md
+include setup.cfg
+include requirements.txt
+
+recursive-include tests *
+recursive-include {{ package_name }}/data *
+recursive-include {{ package_name }}/files *
+recursive-include {{ package_name }}/templates *
+
+exclude .coverage
+exclude .gitignore
+exclude .idea
+exclude .travis.yml
+
+prune .cache
+prune .git
+prune build
+prune dist
+
+recursive-exclude *.egg-info *

@@ -1,0 +1,44 @@
+author:         'Mehmet Tecer'
+author_email:   'mehmettecer@gmail.com'
+package_url:    'http://www.github.com/mtecer'
+
+package_dirs:
+  - templates
+  - files
+  - docs
+  - test
+
+package_files:
+  - name:       'LICENSE'
+    template:   'LICENSE.j2'
+    path:
+  - name:       'MANIFEST.in'
+    template:   'MANIFEST.in.j2'
+    path:
+  - name:       'README.md'
+    template:   'README.md.j2'
+    path:
+  - name:       '__MODULE_RUNNER__.py'
+    template:   'runner.py.j2'
+    path:
+  - name:       'requirements.txt'
+    template:   'requirements.txt.j2'
+    path:
+  - name:       'setup.py'
+    template:   'setup.py.j2'
+    path:
+  - name:       '__init__.py'
+    template:   '__init__.py.j2'
+    path:       '__MODULE_DIR__'
+  - name:       '__main__.py'
+    template:   '__main__.py.j2'
+    path:       '__MODULE_DIR__'
+  - name:       '__MODULE_FILE__.py'
+    template:   'MODULE.py.j2'
+    path:       '__MODULE_DIR__'
+  - name:       'package.py'
+    template:   'package.py.j2'
+    path:       '__MODULE_DIR__'
+  - name:       'file.py'
+    template:   'file.py.j2'
+    path:       '__MODULE_DIR__'
